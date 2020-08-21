@@ -9,7 +9,7 @@ public class Tut5 {
         int input = 0;
         int i = 0;
 
-        for (i = 0; i < 100 && input != -1; i++) {
+        for (i = 0; i < 100; i++) {
             input = scan.nextInt();
             if (input == -1) {
                 break;

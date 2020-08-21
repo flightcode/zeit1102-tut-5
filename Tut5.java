@@ -40,5 +40,25 @@ public class Tut5 {
         } else {
             System.out.println("Number NOT In Array");
         }
+
+        System.out.print("Input Number to Delete: ");
+        input = scan.nextInt();
+
+        int[] newData = new int[100];
+        int k = 0;
+        for (int j = 0; j < i; j++) {
+            if (data[j] != input) {
+                newData[k] = data[j];
+                k++;
+            }
+        }
+        data = newData;
+        i = k;
+
+        System.out.println("");
+        System.out.println("Numbers in Array:");
+        for (int j = 0; j < i; j++) {
+            System.out.print(data[j] + " ");
+        }
     }
 }

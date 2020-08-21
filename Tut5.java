@@ -22,6 +22,7 @@ public class Tut5 {
         for (int j = 0; j < i; j++) {
             System.out.print(data[j] + " ");
         }
+        System.out.println("");
 
         System.out.print("Input Number to Search: ");
         input = scan.nextInt();

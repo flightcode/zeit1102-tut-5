@@ -7,13 +7,18 @@ public class Tut5 {
     public static void main(String[] args) {
         int[] data = new int[100];
         int input = 0;
+        int i = 0;
 
-        for (int i = 0; i < 100 && input != -1; i++) {
+        for (i = 0; i < 100 && input != -1; i++) {
             input = scan.nextInt();
             if (input == -1) {
                 break;
             }
             data[i] = input;
+        }
+
+        for (int j = 0; j < i; j++) {
+            System.out.print(data[j] + " ");
         }
     }
 }
